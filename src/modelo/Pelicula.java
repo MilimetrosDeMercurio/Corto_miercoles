@@ -7,98 +7,73 @@ package modelo;
 
 /**
  *
- * @author LN710Q
+ * @author estudiante
  */
 public class Pelicula {
     private int id;
-    private String nombre;
+    private String codigo;
     private String director;
-    private String clasificacion;
     private String pais;
-    private int año;
-
-    public Pelicula() {
+    private String marca;
+    private int stock;
+    private boolean existencia;
+    
+    public Pelicula(){
+        
     }
     
-    
-
-    public Pelicula(int id, String nombre, String director, String clasificacion, String pais, int año) {
-        this.id = id;
-        this.director = director;
-        this.clasificacion = clasificacion;
-        this.pais = pais;
-        this.año = año;
+    public Pelicula(int id, String codigo, String director, String pais, String marca, int stock, boolean existencia){
+        this.id=id;
+        this.director=director;
+        this.pais=pais;
+        this.marca=marca;
+        this.stock=stock;
+        this.existencia=existencia;
+        this.codigo=codigo;
     }
     
-    public Pelicula(String nombre, String director, String clasificacion, String pais, int año) {
-        this.director = director;
-        this.clasificacion= clasificacion;
-        this.pais = pais;
-        this.año = año;
-    }
-    public Pelicula(String director, String clasificacion, String pais, int año) {
-        this.director = director;
-        this.clasificacion= clasificacion;
-        this.pais = pais;
-        this.año = año;
+    public Pelicula(String codigo, String director, String pais, String marca, int stock, boolean existencia){
+        this.codigo=codigo;
+        this.director=director;
+        this.pais=pais;
+        this.marca=marca;
+        this.stock=stock;
+        this.existencia=existencia;
     }
     
-    public Pelicula(String clasificacion, String pais, int año) {
-        this.clasificacion = clasificacion;
-        this.pais = pais;
-        this.año = año;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public Pelicula(String director, String pais, String marca, int stock, boolean existencia){
+        this.director=director;
+        this.pais=pais;
+        this.marca=marca;
+        this.stock=stock;
+        this.existencia=existencia;
     }
     
-
+    public String getCodigo() {
+    return this.codigo;
+    }
+    
     public String getDirector() {
-        return director;
+        return this.director;
     }
-
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public String getClasificacion() {
-        return clasificacion;
-    }
-
-    public void setClasificacion(String clasificacion) {
-        this.clasificacion = clasificacion;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
-    }
-
-    public int getAño() {
-        return año;
-    }
-
-    public void setAño(int año) {
-        this.año = año;
-    }
-
     
-    
-    
+    public String getPais(){
+        return this.pais;
+    }
+
+    public String getMarca() {
+    return this.marca;
+    }
+
+    public int getStock() {
+    return this.stock;
+    }
+
+    public boolean getExistencia() {
+    return this.existencia;
+    }
+
+    public void setExistencia(boolean b) {
+    this.existencia = b;
+    }
 }
