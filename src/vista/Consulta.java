@@ -274,6 +274,14 @@ public class Consulta extends JFrame {
         stock.setText("");
     }
     
+     public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run(){
+                new Consulta().setVisible(true);
+            }
+        });
+}
    
 
  
